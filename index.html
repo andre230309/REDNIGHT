@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha com Caixa e Divisórias</title>
+    <style>
+        /* Estiliza o corpo da página */
+        body {
+            background-color: black; /* Fundo preto */
+            font-family: Arial, sans-serif; /* Fonte padrão */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Flexbox para posicionar as caixas */
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100vh;
+        }
+
+        /* Contêiner que vai conter as 4 caixas */
+        .container {
+            margin-left: 20px; /* Margem à esquerda para as caixas */
+        }
+
+        /* Estilo de cada caixa */
+        .box {
+            width: 300px; /* Largura das caixas */
+            height: 100px; /* Altura das caixas */
+            background-color: #333; /* Cor de fundo das caixas */
+            color: white; /* Cor do texto */
+            padding: 20px;
+            margin-bottom: 10px; /* Espaço entre as caixas */
+            border: 1px solid #444; /* Borda das caixas */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Caixa 1</div>
+        <div class="box">Caixa 2</div>
+        <div class="box">Caixa 3</div>
+        <div class="box">Caixa 4</div>
+    </div>
+</body>
+</html>
