@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folha com Caixa e Divisórias</title>
+    <title>Folha com Caixas e Linhas</title>
     <style>
         /* Estiliza o corpo da página */
         body {
@@ -15,11 +15,14 @@
             justify-content: flex-start;
             align-items: flex-start;
             height: 100vh;
+            padding-left: 20px; /* Espaçamento à esquerda */
         }
 
-        /* Contêiner que vai conter as 4 caixas */
+        /* Contêiner das caixas */
         .container {
-            margin-left: 20px; /* Margem à esquerda para as caixas */
+            display: flex;
+            flex-direction: column; /* Organiza as caixas verticalmente */
+            gap: 10px; /* Espaço entre as caixas */
         }
 
         /* Estilo de cada caixa */
@@ -29,9 +32,8 @@
             background-color: #333; /* Cor de fundo das caixas */
             color: white; /* Cor do texto */
             padding: 20px;
-            margin-bottom: 10px; /* Espaço entre as caixas */
-            border: 1px solid #444; /* Borda das caixas */
             border-radius: 5px; /* Bordas arredondadas */
+            border: 1px solid white; /* Linha branca ao redor das caixas */
         }
     </style>
 </head>
